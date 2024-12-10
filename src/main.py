@@ -1,8 +1,7 @@
-start_string: str = "."
+start_dot: str = "."
 
 
 def input_number(input_message: str) -> int:
-    print("*Please enter a whole number without decimals")
     try:
         number: int = int(input(f"{input_message}: "))
         return number
@@ -21,11 +20,9 @@ show_line: int = input_number("Show a line")
 
 if show_line == 1:
     for _ in range(distance):
-        start_string = f"{start_string}_"
+        start_dot = f"{start_dot}_"
 else:
     for _ in range(distance):
-        start_string = f"{start_string} "
+        start_dot = f"{start_dot} "
 
-start_string = f"{start_string}."
-
-print(start_string)
+print(f"{start_dot}.")
