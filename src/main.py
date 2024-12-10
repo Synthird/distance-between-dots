@@ -1,12 +1,16 @@
 start_string: str = "."
 
+
 def input_number(input_message: str) -> int:
+    print("*Please enter a whole number without decimals")
     try:
         number: int = int(input(f"{input_message}: "))
         return number
     except:
-        print("You typed something that isn't a whole number!")
+        print(
+            "You typed something that isn't a whole number or a whole number with decimals!")
         raise SystemExit
+
 
 print("How many characters are between the two dots?")
 distance: int = input_number("Distance")
