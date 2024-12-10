@@ -1,6 +1,6 @@
 # Distance-between-dots
 
-Prints two dots as well as spaces/underscores between them
+Prints two dots in the command line as well as spaces/underscores between them
 
 # License
 
