@@ -1,6 +1,6 @@
 # Distance between command line dots
 
-Separating two dots before printing them.
+Separating two dots before printing them. The length between the dots are asked as well.
 
 ## Example of two dots separated from each other
 
