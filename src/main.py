@@ -1,11 +1,19 @@
 start_string: str = "."
 
+def input_number(input_message: str) -> int:
+    try:
+        number: int = int(input(f"{input_message}: "))
+        return number
+    except:
+        print("You typed something that isn't a whole number!")
+        raise SystemExit
+
 print("How far do you want your two dots to be? (In characters)")
-distance: int = int(input("Distance: "))
+distance: int = input_number("Distance")
 
 print("Do you want to show a line between the two dots?")
 print("1 = Yes\nAny other number = No")
-show_line: int = int(input("Show a line: "))
+show_line: int = input_number("Show a line")
 
 if show_line == 1:
     for _ in range(distance):
