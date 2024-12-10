@@ -11,10 +11,14 @@ def input_number(input_message: str) -> int:
         raise SystemExit
 
 
-print("How many characters are between the two dots?")
+def ask_question(question: str) -> None:
+    print(f"--- {question} ---")
+
+
+ask_question("How many characters are between the two dots?")
 characters: int = input_number("Characters")
 
-print("Show a line between the two dots?")
+ask_question("Show a line between the two dots?")
 print("1 = Yes")
 print("Any other number = No")
 show_line: int = input_number("Show a line")
