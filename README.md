@@ -1,4 +1,4 @@
-# Distance between dots
+# Distance between command line dots
 
 Separating two dots before printing them.
 
