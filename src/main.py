@@ -12,7 +12,7 @@ def input_number(input_message: str) -> int:
 
 
 print("How many characters are between the two dots?")
-distance: int = input_number("Distance")
+characters: int = input_number("Characters")
 
 print("Do you want to show a line between the two dots?")
 print("1 = Yes")
@@ -20,10 +20,10 @@ print("Any other number = No")
 show_line: int = input_number("Show a line")
 
 if show_line == 1:
-    for _ in range(distance):
+    for _ in range(characters):
         start_dot = f"{start_dot}_"
 else:
-    for _ in range(distance):
+    for _ in range(characters):
         start_dot = f"{start_dot} "
 
 print(f"{start_dot}.")
