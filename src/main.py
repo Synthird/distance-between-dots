@@ -14,7 +14,7 @@ def input_number(input_message: str) -> int:
 print("How many characters are between the two dots?")
 characters: int = input_number("Characters")
 
-print("Do you want to show a line between the two dots?")
+print("Show a line between the two dots?")
 print("1 = Yes")
 print("Any other number = No")
 show_line: int = input_number("Show a line")
