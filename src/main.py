@@ -4,10 +4,20 @@ start_dot: str = "."
 def input_number(input_message: str) -> int:
     try:
         number: int = int(input(f"{input_message}: "))
-        return number
+
+        if number > -1:
+            return number
+        else:
+            raise ValueError
     except:
-        print(
-            "You typed something that isn't a whole number or a whole number with decimals!")
+        print("!!! Cannot print dots! !!!")
+        print("Probably because you entered:")
+        print("a) Decimals")
+        print("b) Letters")
+        print("c) Symbols")
+        print("d) Spaces between numbers")
+        print("e) A negative number")
+        print("f) You exited the program")
         raise SystemExit
 
 
