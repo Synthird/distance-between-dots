@@ -15,7 +15,8 @@ print("How many characters are between the two dots?")
 distance: int = input_number("Distance")
 
 print("Do you want to show a line between the two dots?")
-print("1 = Yes\nAny other number = No")
+print("1 = Yes")
+print("Any other number = No")
 show_line: int = input_number("Show a line")
 
 if show_line == 1:
