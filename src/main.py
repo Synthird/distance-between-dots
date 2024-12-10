@@ -8,7 +8,7 @@ def input_number(input_message: str) -> int:
         print("You typed something that isn't a whole number!")
         raise SystemExit
 
-print("How far do you want your two dots to be? (In characters)")
+print("How many characters are between the two dots?")
 distance: int = input_number("Distance")
 
 print("Do you want to show a line between the two dots?")
