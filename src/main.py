@@ -28,7 +28,7 @@ def ask_question(question: str) -> None:
 ask_question("How many characters are between the two dots?")
 characters: int = input_number("Characters")
 
-ask_question("Show a line between the two dots?")
+ask_question("Show a line between them?")
 print("1 = Yes")
 print("Any other number = No")
 show_line: int = input_number("Show a line")
