@@ -6,13 +6,13 @@ Separating two dots before printing them in the command line. The length between
 
 Both dots are 5 characters away from each other.
 
-**Line shown:**
+### Line shown
 
 ```
 ._____.
 ```
 
-**No line shown:**
+### No line shown
 
 ```
 .     .
