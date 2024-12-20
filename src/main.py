@@ -1,24 +1,30 @@
 start_dot: str = "."
 
 
-def input_number(input_message: str) -> int:
-	try:
-		number: int = int(input(f"{input_message}: "))
+def exit_with_possible_reasons() -> None:
+	print("!!! Cannot print dots! !!!")
+	print("Probably because you entered:")
+	print("a) Decimals")
+	print("b) Letters")
+	print("c) Symbols")
+	print("d) Spaces between numbers")
+	print("e) A negative number")
+	print("f) You exited the program")
+	raise SystemExit
 
-		if number > -1:
-			return number
-		else:
-			raise ValueError
+
+def input_number(input_message: str) -> int:
+	number: int = 0
+
+	try:
+		number = int(input(f"{input_message}: "))
 	except:
-		print("!!! Cannot print dots! !!!")
-		print("Probably because you entered:")
-		print("a) Decimals")
-		print("b) Letters")
-		print("c) Symbols")
-		print("d) Spaces between numbers")
-		print("e) A negative number")
-		print("f) You exited the program")
-		raise SystemExit
+		exit_with_possible_reasons()
+
+	if number > -1:
+		return number
+	else:
+		exit_with_possible_reasons()
 
 
 def ask_question(question: str) -> None:
