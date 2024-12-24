@@ -8,13 +8,13 @@ Both dots are 5 characters away from each other.
 
 ### Line shown
 
-```
+```PowerShell
 ._____.
 ```
 
 ### No line shown
 
-```
+```PowerShell
 .     .
 ```
 
