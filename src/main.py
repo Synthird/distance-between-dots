@@ -1,18 +1,18 @@
 start_dot: str = "."
 
 
+def exit_with_message(message: str) -> None:
+	print(message)
+	raise SystemExit
+
+
 def input_number(input_message: str) -> int:
 	try:
 		return int(input(f"{input_message}: ").replace(" ", ""))
-	except:
-		print("!!! Cannot print dots! !!!")
-		print("Probably because you entered:")
-		print("a) Decimals")
-		print("b) Letters")
-		print("c) Symbols")
-		print("d) A negative number")
-		print("e) You exited the program")
-		raise SystemExit
+	except ValueError:
+		exit_with_message("Please enter a whole number without any decimals....")
+	except KeyboardInterrupt:
+		exit_with_message("\nYou exited the program!")
 
 
 def ask_question(question: str) -> None:
