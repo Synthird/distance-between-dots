@@ -24,13 +24,13 @@ Both dots are 5 characters away from each other.
 2. Download [main.py](src/main.py)
 3. Run the following command:
 
-```Python
+```Powershell
 python main.py
 ```
 
 If the previous command didn't work, try
 
-```Python
+```Powershell
 python3 main.py
 ```
 
