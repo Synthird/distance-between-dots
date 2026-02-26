@@ -21,7 +21,7 @@ Both dots are 5 characters away from each other.
 ## Installation
 
 1. You must have [python](https://python.org) installed.
-2. Download [main.py](src/main.py)
+2. Download [main.py](src/main.py).
 3. Run the following command:
 
 ```Powershell
